@@ -1,0 +1,27 @@
+<header>
+  <div class="header" id="header">
+    <h1 class="logo"><a href="<%= root_path %>">Quality Express</a><p><a href="<%= root_path %>">Dry Cleaners</a></p></h1>
+    <ul class="head-menu">
+      <li class="border-a"></li>
+      <li class="<%= "active" if params[:action] == "index" %>">
+        <a href="<%= root_path %>">Home</a>
+      </li>
+      <li class="<%= "active" if params[:action] == "services" %>">
+        <a href="<%= services_path %>">Services</a>
+      </li>
+      <li class="<%= "active" if params[:action] == "advice" %>">
+        <a href="<%= advice_path %>">Advice</a>
+      </li>
+      <li class="<%= "active" if params[:action] == "about_us" %>">
+        <a href="<%= about_us_path %>">About Us</a>
+      </li>
+      <li class="<%= "active" if params[:action] == "contact" %>">
+        <a href="<%= contact_path %>">Contacts</a>
+      </li>
+    </ul><!--.head-menu-->
+    <div class="search">
+      <input type="search">
+      <button>search</button>
+    </div><!--.search-->
+  </div><!--#header.header-->
+</header>

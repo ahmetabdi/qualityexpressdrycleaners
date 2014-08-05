@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<%= render 'layouts/header' %>
+		<div class="title-p-bg">
+			<div class="wrapper-content title-page">
+				<div class="content">
+					<h3>contacts</h3>
+				</div>
+			</div>
+		</div><!--.title-p-bg-->
+
+		<div class="clearfix"></div>
+
+		<div class="content pt-61 page-content">
+
+			<aside>
+				<div class="block">
+					<h3 class="aside-title">Get social</h3>
+					<ul class="social">
+						<li><a class="facebook" href="https://www.facebook.com/pages/Quality-Express-Dry-Cleaners/568205449909521" target="_blank"><i></i>Facebook</a></li>
+						<li><a class="dribbble" href="https://plus.google.com/116066614319558590904?gl=uk&hl=en" target="_blank"><i></i>Google</a></li>
+					</ul><!--.social-->
+				</div><!--.block-->
+				<div class="block pb-27">
+					<h3 class="aside-title">Contact Info</h3>
+					<ul class="contact-info">
+						<li class="phone-ico"><strong>Phone:</strong> 020 87671337</li>
+						<li class="fax-ico"><strong>Address:</strong> <p>12 Upper Tooting Road, London, SW17 7PG.</p></li>
+					</ul><!--.contact-info-->
+				</div><!--.block.pb-27-->
+			</aside>
+
+			<div class="contact-block">
+				<h3 class="cont-title">Our location</h3>
+				<p>We are located right next to Tooting Bec Underground Station on the nothern line, right next to the bus stop less than one minute walk from the station.</p>
+				<h4>Tooting Bec, Tooting Bec Station (Stop C)</h4>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Bus #</th>
+							<th>Location</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>155</td>
+							<td>Newington</td>
+						</tr>
+						<tr>
+							<td>219</td>
+							<td>Clapham Junction</td>
+						</tr>
+						<tr>
+							<td>355</td>
+							<td>Brixton</td>
+						</tr>
+						<tr>
+							<td>N155</td>
+							<td>Soho</td>
+						</tr>
+					</tbody>
+				</table>
+				<h4>Map</h4>
+				<div class="contact-map">
+					<div id="map_canvas" style="width:100%; height:100%"></div>
+				</div><!--.contact-map-->
+				<form action="http://themes.myterranet.com/corporata/light-theme/contact.php" class="contact-us" id="contact-form" method="post" data-unknown-error-message="Unknown form error, please try again.">
+					<fieldset>
+						<h3>Send us your request</h3>
+						<div class="control">
+							<input name="name" type="text" placeholder="Name">
+							<input name="email" type="text" placeholder="E-mail">
+						</div>
+						<div class="control">
+							<textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+						</div>
+						<div class="control mr-0">
+							<button>SEND</button>
+						</div>
+					</fieldset>
+				</form>
+			</div><!--.contact-block-->
+
+			<div class="clearfix"></div>
+
+		</div><!--.content.pt-61-->
+
+		<div class="clearfix"></div>
+	</div><!--#wrapper-->
+
+	<%= render 'layouts/footer' %>
+	<script>
+	  (function initialize() {
+	    var latlng = new google.maps.LatLng(51.435415,-0.160503);
+	    var myOptions = {
+	      zoom: 15,
+	      center: latlng,
+	      mapTypeId: google.maps.MapTypeId.ROADMAP
+	    };
+	    var map = new google.maps.Map(document.getElementById("map_canvas"),
+	        myOptions);
+	    var marker = new google.maps.Marker({
+	        position: latlng,
+	        map: map,
+	        title: 'Quality Express Dry Cleaners'
+	    });
+	  })();
+	</script>
+
+</body>
+</html>

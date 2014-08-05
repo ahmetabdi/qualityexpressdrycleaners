@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <%= render 'layouts/header' %>
+    <div class="title-p-bg">
+      <div class="wrapper-content title-page">
+        <div class="content">
+          <h3>Services</h3>
+        </div>
+      </div>
+    </div><!--.title-p-bg-->
+
+    <div class="clearfix"></div>
+
+    <div class="content pt-61 page-content">
+
+      <aside>
+        <div class="block">
+          <h3 class="aside-title">Services</h3>
+          <ul class="blog-categories">
+            <li><a href="#" onclick="toggle_visibility('dry_cleaning');"><i></i>Dry Cleaning</a></li>
+            <li><a href="#" onclick="toggle_visibility('shirts');"><i></i>Shirts</a></li>
+            <li><a href="#" onclick="toggle_visibility('laundering');"><i></i>Laundering</a></li>
+            <li><a href="#" onclick="toggle_visibility('repairs');"><i></i>Repairs & Alterations</a></li>
+            <li><a href="#" onclick="toggle_visibility('rugs');"><i></i>Rugs & Carpets</a></li>
+            <li><a href="#" onclick="toggle_visibility('curtains');"><i></i>Curtains & Duvets</a></li>
+            <li><a href="#" onclick="toggle_visibility('wedding');"><i></i>Wedding Dresses</a></li>
+          </ul>
+        </div><!--.block-->
+      </aside>
+
+      <div class="blog">
+        <div id="dry_cleaning" class='hide' style='display: block;'><h4>Dry Cleaning</h4>We provide a combination of hand valeting with the most advanced and environmentally friendly techniques in fabric care.<br/><br/>
+        Every piece, even everyday items, go through our seven stage cleaning process starting with an evaluation of the fabric and ending with a final hand inspection.</div>
+        <div id="shirts" class='hide'><h4>Shirts</h4>Each shirt undergoes a pre-wash inspection, grading and treatment before being meticulously finished by hand.<br/><br/>
+Shirts can be returned either folded or on a hanger, according to your preference.</div>
+        <div id="laundering" class='hide'><h4>Laundering</h4>We pay particular attention to fine linen and cotton ware from table clothes to bathroom towels.<br/><br/>
+This hand-finished service includes stain removal, cleaning, hand pressing, minor mending, inspection and packaging.</div>
+        <div id="repairs" class='hide'><h4>Repairs & Alterations</h4>We bring expertise and dedication to repairs and alterations whether rejuvenating a garment or perfecting its fit. Special attention is always given to maintaining and, if necessary, expertly reproducing the finished detail of the garment. </div>
+        <div id="rugs" class='hide'><h4>Rugs & Carpets</h4>The experts have mastered the techniques required to restore antique, silk and oriental rugs, tapestries, and household rugs. A damaged area, burns, splits and holes can be expertly mended, problem stains eliminated; colours rectified and faded areas restored.</div>
+        <div id="curtains" class='hide'><h4>Curtains & Duvets</h4>We cleans and restores curtains so that textures are rejuvenated and colours given new vibrancy. We offer the finest cleaning of lined and interlined curtains with a ‘No Shrinkage Guarantee’.<br/><br/>
+        Net curtains, tiebacks, Austrian, Festoon, Roman blinds and other forms of window dressing such as swags and tails can all be serviced. A take down and re-hang service is also available, by appointment.</div>
+        <div id="wedding" class='hide'><h4>Wedding</h4>We offer Wedding dress cleaning and preservation. All dresses are carefully examined prior to being cleaned, fabrics are evaluated for serviceability and buttons or ornamental elements are protected or removed before the cleaning process.<br/><br/>
+        For more information please contact our Couture Manager on 020 87671337 who will be happy to discuss your cleaning and preservation requirements.</div>
+      </div><!--.blog-->
+
+    </div><!--.content.pt-61-->
+
+    <div class="clearfix"></div>
+
+    <%= render 'layouts/footer' %>
+  </div><!--#wrapper-->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+       $('.hide').hide();
+       var e = document.getElementById(id);
+
+          e.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

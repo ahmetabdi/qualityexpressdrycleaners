@@ -1,0 +1,135 @@
+<div id="wrapper">
+	<%= render 'layouts/header' %>
+	<div class="wrapper-content">
+		<div class="swipe home-slide video-swipe" data-swipe="mainFlip" data-auto="5000">
+			<div class="swipe-wrap">
+				<div data-title="" data-description="Quality Express has been established since 1970, offering professional dry cleaning and a personal laundry service to a high standard.
+We are a family run business and are committed to providing the best possible service for our customers. We pride ourselves on providing a high quality service to all of our customers, as well as a a wide range of services that meets the cleaning needs of our customers.">
+					<div class="img-block">
+						<video style="width: 100%;display: block;" loop id="video-1" class="video-js vjs-default-skin vjs-mute-control"
+							autoplay preload="auto" height="526"
+							data-setup='{}'>
+							<source src="video/video-2.mp4" type='video/mp4' />
+							<source src="video/video-2.webmhd.webm" type='video/webm' />
+							<source src="video/video-2.oggtheora.ogv" type='video/ogv' />
+						</video>
+					</div>
+				</div>
+			</div><!--.swipe-wrap-->
+		</div><!--#mySwipe.swipe.home-slide-->
+    <div class="content slider-flip">
+      <div class="slider-flip-flipper">
+        <div class="slider-flip-front"></div>
+        <div class="slider-flip-back"></div>
+      </div>
+    </div>
+	</div><!--.wrapper-content-->
+
+	<div class="content">
+		<div class="get-start">
+
+		</div>
+
+		<div class="clearfix"></div>
+
+		<div class="row-fluid home-info">
+			<div class="span4">
+				<h3 class="item-1">Who we are?</h3>
+				<p>We are a family run business that have been working hard for <%= Time.now.year - 1970 %> years and counting. We pride ourselves of the work we produce, for us it's about providing the customer the best possible service. We provide the same level of care and quality for each and every garment that comes to us.</p>
+			</div>
+			<div class="span4">
+				<h3 class="item-2">Finest</h3>
+				<p>The Dry Cleaning and Laundry Service offered by us combines the finest traditions of hand valeting with the most advanced, environmentally friendly techniques in fabric care.</p>
+			</div>
+			<div class="span4">
+				<h3 class="item-3">Promise</h3>
+				<p>Every garment that is brought to us goes through our unique seven stage process. Each item of clothing is carefully examined before any cleaning process is undertaken and hand finished before their return.</p>
+			</div>
+		</div><!--.row-fluid.home-info-->
+
+		<div class="clearfix"></div>
+
+		<div class="recent">
+			<div class="content-title">
+				<h3 class="content-title-inner">
+					<span>RECENT WORK</span>
+				</h3>
+			</div><!--.content-title-->
+			<div class="recent-works recent-works-ready">
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-1.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-2.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-3.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-4.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-5.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-6.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-7.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+				<div class="portfolio-item">
+					<a href="img/placehold.png" class="group1">
+						<img data-lazy-img="img/portfolio-img/img-8.jpg" src="img/dot.png" alt="">
+						<div class="h-block">
+							<h3>Kelly Clark <br>Photography</h3>
+						</div>
+					</a>
+				</div>
+			</div><!--.recent-works-->
+		</div><!--.recent-->
+
+		<div class="get-in">
+			<a href="<%= contact_path %>">Get in touch</a>
+			<span class="like-works">Like what you see?</span>
+			<span class="sep"></span>
+			<span class="can-do">Get in touch with us or drop us an email</span>
+		</div><!--.get-in-->
+
+	</div>
+
+	<%= render 'layouts/footer' %>

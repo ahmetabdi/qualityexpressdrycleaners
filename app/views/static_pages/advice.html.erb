@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <%= render 'layouts/header' %>
+    <div class="title-p-bg">
+      <div class="wrapper-content title-page">
+        <div class="content">
+          <h3>Advice</h3>
+        </div>
+      </div>
+    </div><!--.title-p-bg-->
+
+    <div class="clearfix"></div>
+
+    <div class="content pt-61 page-content">
+
+      <aside>
+        <div class="block">
+          <h3 class="aside-title">Garment Advice</h3>
+          <ul class="blog-categories">
+            <li><a href="#" onclick="toggle_visibility('stains');"><i></i>Stains</a></li>
+            <li><a href="#" onclick="toggle_visibility('garment');"><i></i>Garment care</a></li>
+            <li><a href="#" onclick="toggle_visibility('linen');"><i></i>Linen care</a></li>
+          </ul>
+        </div><!--.block-->
+      </aside>
+
+      <div class="blog">
+        <div id="stains" class='hide' style='display: block;'>
+          <h4>Stains</h4>
+          <ul>
+            <li>The nature and age of any stain combined with the colour and construction of the fabric very much dictates the end result.</li>
+            <li>The dye in some fabrics is more soluble than the stain. Removing the stain will remove the dye.</li>
+            <li>Developed Stains: Spillages of drinks not containing strong dyes, such as lemonade and champagne, can be blotted away from fabrics and appear to have disappeared. However the residual sugar content is at work in your garment. Left unattended for a period of time, a yellow or brown stain will appear, this is due to oxidation of the sugar, similar to a half eaten apple.</li>
+            <li>Early on in its life a stain will develop with the help of any heat source, such as pressing. The resulting developed stain can be permanent.</li>
+          </ul>
+          <p>Stains are dealt with by hand prior to dry cleaning. Unless we have discussed with you the element of ‘Owners Risk’ we will operate within safety margins, limiting the end result in the removal of problematic stains.<br></p>
+        </div>
+        <div id="garment" class='hide'>
+        <h4>Garment care</h4>
+        <ul>
+          <li>Hang clothes outside your wardrobe for at least two hours before putting away.</li>
+          <li>Cover the shoulders of clothing; use a cut off dry cleaning cover, to prevent dust. Do not leave in the wardrobe completely covered as the air cannot circulate.</li>
+          <li>Deal with stained clothes as soon as possible. Stains left unattended may develop and damage the fabric.</li>
+          <li>Never rub stains, blot with a white absorbent paper towel – one piece in front and one behind.</li>
+          <li>Rubbing at silk, wool or linen may result in permanent removal of the dye which becomes more apparent after dry cleaning.</li>
+          <li>Rubbing wool may cause pile damage.</li>
+          <li>Do not be tempted to apply white wine, soda water, salt etc. to stains it makes the stain more problematic to deal with.</li>
+          <li>Dry cleaning relates best to oil based stains, never dab water on these as water sets the oils into the fabric.</li>
+          <li>Water based stains are more difficult to deal with and can loosen the dye in fabrics. Application of water will exacerbate the problem.</li>
+          <li>Always tell your dry cleaner what caused the stain and what you have done in the attempt to remove it.</li>
+          <li>Dress for the occasion. If attending a ‘High Risk’ event where drink can spill over you (cocktail party), wear something washable.</li>
+        </ul>
+          We advise on all areas of fabric care. Information on your garments is essential to that advice, so please try and make time to discuss your needs when you visit us.<br>
+        </div>
+        <div id="linen" class='hide'>
+        <h4>Linen care</h4>
+        <ul>
+          <li>Regular and careful laundering of linen is essential to preserve its colour.</li>
+          <li>Never store used linen.
+          Never store starched linen. The starch will discolour turning your linen yellow.</li>
+          <li>Always keep linen in well ventilated cupboards first covering the shelves with acid free tissue paper. Our linen will always be returned in such paper which you can use for this purpose.</li>
+          <li>Folded linen should always be kept away from direct sunlight. The latter will fade and discolour the fabrics along the fold lines.</li>
+          <li>Try to avoid storing linen in draws as moths attack poorly ventilated darken areas. Wide slatted shelves allow the circulation of air.</li>
+          <li>Ideally linen cupboards should be properly cleaned annually and your linen examined. Bed linen will show the first signs of wear in the middle, the fabric discolouring and becoming thin.</li>
+        </ul>
+        We have retained and encourage old-fashioned skills to ensure the highest standards of Quality Laundry.<br>
+      </div><!--.blog-->
+
+    </div><!--.content.pt-61-->
+
+    <div class="clearfix"></div>
+
+    <%= render 'layouts/footer' %>
+  </div><!--#wrapper-->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+       $('.hide').hide();
+       var e = document.getElementById(id);
+
+          e.style.display = 'block';
+    }
+  </script>
+</body>
+</html>

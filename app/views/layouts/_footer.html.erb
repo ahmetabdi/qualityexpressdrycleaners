@@ -1,0 +1,81 @@
+<div class="clearfix"></div>
+
+<footer class="content">
+  <div class="cont-block">
+    <h3 class="f-title"><span>Contact info</span></h3>
+    <ul class="cont-list">
+      <li><b>Address:</b> <p>12 Upper Tooting Road, London, SW17 7PG.</p></li>
+      <li><b>Phone Number:</b> 020 8767 1337</li>
+      <li><b>Website:</b> http://qualityexpressdrycleaners.co.uk/</li>
+    </ul>
+    <ul class="social">
+      <li class="face">
+        <a href="https://www.facebook.com/pages/Quality-Express-Dry-Cleaners/568205449909521" target="_blank">face</a>
+        <i class="social-name">facebook</i>
+      </li>
+      <li class="google">
+        <a href="https://plus.google.com/116066614319558590904?gl=uk&hl=en" target="_blank">google</a>
+        <i class="social-name">google</i>
+      </li>
+    </ul>
+  </div>
+
+  <div class="twit-block">
+    <h3 class="f-title"><span>Map</span></h3>
+    <div class="contact-map">
+      <div id="map_canvas2" style="width:100%; height:100%"></div>
+    </div>
+  </div><!--.twit-block-->
+
+  <div class="inst-block">
+    <h3 class="f-title"><span>Instagram Widget</span></h3>
+    <ul class="inst-photo" id="instagram"></ul>
+  </div><!--.reminst-blockove-->
+  <div class="clearfix"></div>
+</footer>
+</div><!--#wrapper-->
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendors/jquery-1.9.1.js"><\/script>')</script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+<script src="js/vendors/bootstrap.js"></script>
+<script src="js/vendors/instagram.js"></script>
+<script src="js/vendors/superfish.js"></script>
+<script src="js/vendors/jquery.colorbox.js"></script>
+<script src="js/vendors/swipe.js"></script>
+<script src="js/lazy-images.js"></script>
+<script src="js/script.js"></script>
+<script>
+(function($) {
+  var $body = $('body');
+  $(window).on('resize.sliderReflow', function() {
+    $('.slider-flip').height($('.slider-flip-front h3').height()+$('.slider-flip-front p').height()+67).css('bottom','-'+($('.slider-flip').height()/2+'px'));
+    $('.home-prev, .home-next').css('top',$('.home-slide.swipe').height()/2+'px');
+
+  }).trigger('resize.sliderReflow');
+})(jQuery);
+</script>
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+<script>
+  (function initialize() {
+    var latlng = new google.maps.LatLng(51.435415,-0.160503);
+    var myOptions = {
+      zoom: 15,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map_canvas2"),
+        myOptions);
+    var marker = new google.maps.Marker({
+        position: latlng,
+        map: map,
+        title: 'Quality Express Dry Cleaners'
+    });
+
+  })();
+</script>
+<script>
+$(function() {
+  setTimeout(function(){ $('.active').mouseover(); }, 100);
+});
+</script>
