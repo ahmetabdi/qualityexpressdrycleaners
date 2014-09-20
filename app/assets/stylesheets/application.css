@@ -17,7 +17,6 @@
 .logo > a:first-child {
   font-weight: normal;
   border-bottom: 2px solid;
-  background: #EEE;
   display: table;
 }
 
